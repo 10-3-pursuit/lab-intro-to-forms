@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1><strong>Payment Form</strong></h1>
+        <div>Required fields are marked by *</div>
+    </header>
+    <br>
+    
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label>
+                <input type="radio" checked>
+                Mx.
+            </label>
+            <br>
+            <label>
+                <input type="radio" >
+                Mr.
+            </label>
+            <br>
+            <label>
+                <input type="radio" >
+                Ms.
+            </label>
+            <br>
+            <label>
+                <input type="radio" >
+                Mrs.
+            </label>
+            <br>
+            <label>
+                Name
+                <br>
+                <input type="text" id="name" required>
+            </label>
+            <br>
+            <label>
+                Email
+                <br>
+                <input type="email" id="email" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+
+                <select name="card-type" id="card-type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                </select>
+            </label>
+            <br>
+
+            <label>
+                Credit Card Number
+                <br>
+                <input type="tel" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+            </label>
+            <br>
+
+            <label>
+                Expiration Date
+                <br>
+                <input type="text" name="expiration-date" id="expiration-date" placeholder="MM/YY" required>
+            </label>
+
+            <fieldset>
+                <input type="submit" value="Submit Payment">
+            </fieldset>
+        </fieldset>
+    </form>
+
+</body>
+</html>
+
+
