@@ -6,36 +6,80 @@
     <title>Document</title>
 </head>
 <body>
+    
     <header>
-    <h1><strong>Payment Form</strong></Form></h1>
-    <div>Required fields are marked by *</div>
+        <h1><strong>Payment Form</strong></h1>
+        <div>Required fields are marked by *</div>
+    </header>
     <br>
     
-    <fieldset><legend>Contact Information</legend>
-        <form>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+
             <label>
-              <input type="radio" />
-              Mx.
-              <br>
+                <input type="radio" name="visibility" id="mx" checked>
+                Mx.
             </label>
             <br>
             <label>
-             <input type="radio" />
-              Mr.
+                <input type="radio" name="visibility" id="mr">
+                Mr.
             </label>
             <br>
             <label>
-              <input type="radio" />
-              Ms.
+                <input type="radio" name="visibility" id="ms">
+                Ms.
             </label>
             <br>
             <label>
-              <input type="radio" />
-              Mrs.
+                <input type="radio" name="visibility" id="mrs">
+                Mrs.
             </label>
-          </form>
-    </fieldset>
-        
+            <br>
+            <label>
+                Name
+                <br>
+                <input type="text" id="name" required>
+            </label>
+            <br>
+            <label>
+                Email
+                <br>
+                <input type="email" id="email" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+
+                <select name="card-type" id="card-type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                </select>
+            </label>
+            <br>
+
+            <label>
+                Credit Card Number
+                <br>
+                <input type="tel" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+            </label>
+            <br>
+            
+            <label>
+                Expiration Date
+                <br>
+                <input type="text" name="expiration-date" id="expiration-date" placeholder="MM/YY" required>
+            </label>
+
+            <fieldset>
+                <input type="submit" value="Submit Payment">
+            </fieldset>
+        </fieldset>
+    </form>
+
 </body>
 </html>
 
