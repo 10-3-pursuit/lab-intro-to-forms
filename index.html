@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+</head>
+<body>
+  <header>
+    <h1>Payment Form</h1>
+  </header>
+  <main>
+    <p>Required fields are marked by *</p>
+    <fieldset>
+      <legend>Contact Information</legend>
+      <form>
+        <label>
+          Mx.
+          <br>
+          <input type="radio" name="prefix" id="mx" checked>
+        </label>
+        <br>
+        <label>
+          Mr.
+          <br>
+          <input type="radio" name="prefix" id="mr">
+        </label>
+        <br>
+        <label>
+          Ms.
+          <br>
+          <input type="radio" name="prefix" id="ms">
+        </label>
+        <br>
+        <label>
+          Mrs.
+          <br>
+          <input type="radio" name="prefix" id="mrs">
+        </label>
+        <br>
+        <label for="name">
+          Name*
+          <br>
+          <input type="text" name="name" id="name" required>
+        </label>
+        <br>
+        <label for="email">
+          Email*
+          <br>
+          <input type="email" name="email" id="email" required>
+        </label>
+      </form>
+    </fieldset>
+
+    <fieldset>
+      <legend>Payment Information</legend>
+      <form>
+        <label>
+          <select name="card-type" id="card-type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+          </select>
+          <br>
+          Credit Card Number*
+        </label>
+        <br>
+        <label>
+          <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
+        </label>
+        <br>
+        <label>
+          Expiration Date*
+          <br>
+          <input type="text" name="expiration-date" id="expiration-date" required>
+        </label>
+      </form>
+    </fieldset>
+    <label>
+      <button type="submit">Submit Payment</button>
+    </label>
+  </main>
+</body>
+</html>
