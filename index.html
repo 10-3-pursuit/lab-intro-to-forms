@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment Form</title>
 </head>
 <body>
-    
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <form>
+        <label>
+            <fieldset>
+                <!-- contact information box -->
+                <legend>Contact Information</legend>
+                Mx.
+                <br>
+                <input type="radio" name="visibility" id="Mx." checked>
+                <br>
+                Mr.
+                <br>
+                <input type="radio" name="visibility" id="Mr.">
+                <br>
+                Mrs. 
+                <br>
+                <input type="radio" name="visibility" id="Mrs.">
+                <br>
+                <!-- name text boxt -->
+                Name 
+                <br>
+                <input type="text" id="name" required>
+                <br>
+                Email
+                <br>
+                <input type="text" id="email" required>
+            </fieldset>
+        </label>
+        <label>
+            <fieldset>
+                <legend> Payment Information</legend>
+                <select name="category" id="post-category">
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="american-express">American Express</option>
+              <option value="discover">Discover</option>
+                </select>
+                Credit Card Number
+                <br>
+                <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
+                <br>
+                Expiration Date
+                <br>
+                <input type="text"  id="expiration-date" required>
+            </fieldset>
+            <button type="submit">Submit Payment</button>
+        </label>
+        
+    </form>
 </body>
 </html>
