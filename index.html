@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <hr>
+    <h2> Contact Information</h2>
+    <form>
+        <!-- radio buttons connect by adding same name-->
+        <!---->
+        <label>
+          <input type="radio" name="prefix" />
+          Mr.
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="prefix"/>
+          Mrs.
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="prefix" />
+          Mx.
+          <br>
+        </label>
+        <label>
+            <input type="radio" name="prefix">
+            Ms.
+        </label>
+        <br>
+        <form>
+            <label>Name</label>
+        
+            <!-- type text allows you to type ina box-->
+         <input 
+         id="name"
+         name="name"
+         type="text" 
+         placeholder="Enter name here..." 
+         required/> *
+         <br>
+         <label>Email</label>
+         <input 
+         type="email"  
+         placeholder="Enter email here..."
+         required> *
+         <hr>
+         <h2>Payment Information</h2>
+             <select name="Category" id="post-category" required>
+                <option>Visa</option>
+                <option value="Discover">Discover</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="American-Express">American Express</option>
+             </select>
+    
+        <br>
+        <label></label>
+            <input 
+            id="xxxx-xxxx-xxxx-xxxx" 
+            name="xxxx-xxxx-xxxx-xxxx" 
+            placeholder="xxxx xxxx xxxx xxxx" 
+            type="text" 
+            required>
+            <label >Credit Card Number </label>*
+            <br>
+            <label> Expiration Date</label>*
+            <br>
+            <input 
+            id="xx/xx" 
+            name="xx/xx" 
+            placeholder="xx/xx" 
+            type="text" 
+            required>
+            <hr>
+             <button type="submit">Submit Payment</button>
+    </label>
+    </form>
+</body>
+</html>
