@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lab</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <form action="">
+        <fieldset>
+            <legend>Contact Information</legend>
+                <label for="mx-prefix">
+                    Mx. 
+                    <br>
+                    <input id ="mx-prefix" name="prefix" type="radio" checked>
+                    <br>
+                </label>
+                <label for="mr-prefix">
+                    Mr. 
+                    <br>
+                    <input id="mr-prefix" name="prefix" type="radio">
+                    <br>
+                </label>
+                <label for="ms-prefix">
+                    Ms. 
+                    <br>
+                    <input id ="ms-prefix" name="prefix" type="radio">
+                    <br>
+                </label>
+                <label for="mrs-prefix">
+                    Mrs.
+                    <br>
+                    <input id="mrs-prefix" name="prefix" type="radio">
+                    <br>
+                </label>
+                <label for="name">
+                    Name
+                    <br>
+                    <input id="name" name="name" type="text" required>
+                    <br>
+                </label>
+                <label for="email">
+                    Email
+                    <br>
+                    <input id="email" name="email" type="text" required>
+                    <br>
+                </label>
+        </fieldset>    
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label>
+                <select id="creditcard" name="card" required>
+                    <option value="visa">Visa</option>
+                    <option value="american-express">American Express</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="discover">Discover</option>
+                </select>
+                Credit Card Number
+                <br>
+            </label>
+            <label for="ccnumber">
+                <input id="ccnumber" type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
+                <br>
+            </label>
+            <label for="expiration-date">
+                Expiration Date
+                <br>
+                <input id="expiration-date" name="expiration-date" type="text">
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit Payment">
+    </form>
+</body>
+</html>
