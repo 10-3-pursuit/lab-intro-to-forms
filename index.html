@@ -13,8 +13,9 @@
     <form>
       <fieldset>
         <legend>Contact Information</legend>
-        Mx.
+    
         <div>
+         
           <label>
             <input
               id="gender-neutral"
@@ -23,24 +24,25 @@
               value="mx"
               checked
             />
-         
+              Mx.
           </label>
         </div>
-           Mr.
+        
         <div>
           <label>
             <input id="gender-male" name="gender" type="radio" value="mr" />
-         
+             Mr.
           </label>
+         
         </div>
-              Ms.
+         
         <div>
           <label>
             <input id="gender-female" name="gender" type="radio" value="ms" />
-      
+      Ms.
           </label>
         </div>
-               Mrs.
+            
         <div>
     
             <label>
@@ -50,7 +52,7 @@
                 type="radio"
                 value="mrs"
               />
-       
+          Mrs.
             </label>
           </div>
           <div>
@@ -65,26 +67,28 @@
         </div>
         <input id="email" name="email" type="email" required>
     </fieldset>
+
       <div>
         <!-- Payment Information -->
         <!-- Credit Card Dropdown -->
         <fieldset>
             <legend>Payment Information</legend>
+
         <select name="credit card" id="credit card" required>
             <option value="visa">Visa</option>
             <option value="mastercard">Mastercard</option>
             <option value="american express">American Express</option>
             <option value="discover">Discover</option>
-           
-        </select>
-         Credit Card Number
+          </select>
+          <label for="name">Credit Card Number</label>
          <div>
             <input type="tel" placeholder="xxxx xxxx xxxx xxxx">
-        </div>
+     <div>
         <div>
             <label for="expiration-date">Expiration Date</label>
         </div>
         <input id="expiration-date" name="expiration-date" type="text">
+        </div>
         </fieldset>
       </div>
 
