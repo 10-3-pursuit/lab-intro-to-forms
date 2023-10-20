@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1><strong>Payment Form</strong></h1>
+    <div>Required field are marked by *</div>
+    </header>
+    <br>
+    <!-- Creating a form -->
+    <form>
+        <fieldset>
+        <legend>Contact Information</legend>
+        <!-- Radio button 1 - must be checked unlike the other ones -->
+        <label>
+            <input type="radio" name="visibility" id="mx" checked> 
+            Mx.
+        </label>
+        <br/>
+        <!-- Radio button 2 -->
+        <label>
+            <input type="radio" name="visibility" id="mr">
+            Mr.
+        </label>
+        <br/> 
+        <!-- Radio button 3 -->
+        <label>
+            <input type="radio" name="visibility" id="ms">
+            Ms.
+        </label>
+        <br/>
+        <!-- Radio button 4 -->
+        <label>
+            <input type="radio" name="visibility" id="mrs">
+            Mrs.
+        </label>
+        <br/>
+        <!-- Text field-->
+        <!-- Name text field which has required attribute and has id attribute -->
+        <label>
+            Name
+            <br/>
+            <input type="text" id="name" required>
+        </label>
+        <!-- Email text field which has required attribute and has id attribute -->
+        <label>
+            Email
+            <br/>
+            <input type="text" id="email" required>
+        </label>
+        <br/>
+        </fieldset>
+        <!-- NEW FIELD SET FOR DROPDOWN -->
+        <fieldset>
+            <legend>Payment Information</legend>
+        </fieldset>
+
+
+        <br/>
+    </fieldset>
+    </form>
+</body>
+</html>
