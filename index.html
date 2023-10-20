@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1><strong>Payment Form</strong></h1>
+    <div>Required fields are marked by *</div>
+    </header>
+    <br>
+    <!-- Creating a form -->
+    <form>
+        <!-- Fieldset makes the box around stuff -->
+        <fieldset>
+            <!-- legend labels the fieldset box -->
+        <legend>Contact Information</legend>
+        <!-- Radio button 1 - must be checked unlike the other ones -->
+        <label>
+            Mx.<br/>
+            <input type="radio" name="visibility" id="mx" checked/> 
+        </label>
+        <br/>
+        <!-- Radio button 2 -->
+        <label>
+            Mr.<br/>
+            <input type="radio" name="visibility" id="mr"/>
+        </label>
+        <br/> 
+        <!-- Radio button 3 -->
+        <label>
+            Ms.<br/>
+            <input type="radio" name="visibility" id="ms"/>
+        </label>
+        <br/>
+        <!-- Radio button 4 -->
+        <label>
+            Mrs.<br/>
+            <input type="radio" name="visibility" id="mrs"/>
+        </label>
+        <br/>
+        <!-- Text field-->
+        <!-- Name text field which has required attribute and has id attribute -->
+        <label>
+            Name
+            <br/>
+            <input type="text" id="name" required/>
+        </label>
+        <!-- Email text field which has required attribute and has id attribute -->
+        <br/>
+        <label>
+            Email
+            <br/>
+            <input type="text" id="email" required/>
+        </label>
+        <br/>
+        </fieldset>
+        <!-- NEW FIELD SET FOR DROPDOWN -->
+        <fieldset>
+            <legend>Payment Information</legend>
+            <!-- CC dropdown -->
+            <label>
+                <label>Credit Card Type</label>
+                <br/>
+            <select name ="card-type" id="card-type">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            </label>
+            <!-- Credit Card number field -->
+            <label>
+                <br/>
+                Credit Card Number
+                <br/>
+                <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+            </label>
+            <br/>
+            <label>
+                Expiration Date
+                <br/>
+                <input type="text" id="expiration-date" placeholder="MM/YY" required/>
+            </label>
+            <br/>
+    </fieldset>
+    <input type="submit" value="Submit Payment"/>
+    </form>
+</body>
+</html>
