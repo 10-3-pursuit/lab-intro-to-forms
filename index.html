@@ -7,7 +7,7 @@
 </head>
 <body>
     <header><h1><strong>Payment Form</strong></h1>
-    <div>Required field are marked by *</div>
+    <div>Required fields are marked by *</div>
     </header>
     <br>
     <!-- Creating a form -->
@@ -61,6 +61,8 @@
             <legend>Payment Information</legend>
             <!-- CC dropdown -->
             <label>
+                <label>Credit Card Type</label>
+                <br/>
             <select name ="card-type" id="card-type">
                 <option value="visa">Visa</option>
                 <option value="mastercard">Mastercard</option>
@@ -70,7 +72,8 @@
             </label>
             <!-- Credit Card number field -->
             <label>
-                Credit Card 
+                <br/>
+                Credit Card Number
                 <br/>
                 <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
             </label>
@@ -78,7 +81,7 @@
             <label>
                 Expiration Date
                 <br/>
-                <input type="text" id="expiration-date" required/>
+                <input type="text" id="expiration-date" placeholder="MM/YY" required/>
             </label>
             <br/>
     </fieldset>
