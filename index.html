@@ -12,29 +12,31 @@
     <br>
     <!-- Creating a form -->
     <form>
+        <!-- Fieldset makes the box around stuff -->
         <fieldset>
+            <!-- legend labels the fieldset box -->
         <legend>Contact Information</legend>
         <!-- Radio button 1 - must be checked unlike the other ones -->
         <label>
-            <input type="radio" name="visibility" id="mx" checked> 
+            <input type="radio" name="visibility" id="mx" checked/> 
             Mx.
         </label>
         <br/>
         <!-- Radio button 2 -->
         <label>
-            <input type="radio" name="visibility" id="mr">
+            <input type="radio" name="visibility" id="mr"/>
             Mr.
         </label>
         <br/> 
         <!-- Radio button 3 -->
         <label>
-            <input type="radio" name="visibility" id="ms">
+            <input type="radio" name="visibility" id="ms"/>
             Ms.
         </label>
         <br/>
         <!-- Radio button 4 -->
         <label>
-            <input type="radio" name="visibility" id="mrs">
+            <input type="radio" name="visibility" id="mrs"/>
             Mrs.
         </label>
         <br/>
@@ -43,19 +45,37 @@
         <label>
             Name
             <br/>
-            <input type="text" id="name" required>
+            <input type="text" id="name" required/>
         </label>
         <!-- Email text field which has required attribute and has id attribute -->
+        <br/>
         <label>
             Email
             <br/>
-            <input type="text" id="email" required>
+            <input type="text" id="email" required/>
         </label>
         <br/>
         </fieldset>
         <!-- NEW FIELD SET FOR DROPDOWN -->
         <fieldset>
             <legend>Payment Information</legend>
+            <!-- CC dropdown -->
+            <label>
+            <select name ="card-type" id="card-type">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            </label>
+            <br/>
+            <!-- Credit Card number field -->
+            <label>
+                Credit Card 
+                <br/>
+                <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+            </label>
+
         </fieldset>
 
 
