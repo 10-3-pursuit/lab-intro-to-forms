@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+      
+        Payment Form
+    </h1>
+    <p>Required fields are marked by *</p>
+      <form>
+        
+        <fieldset> 
+    <legend>Contact Information</legend>
+    
+    <div>
+      <label>
+      
+        <input
+      
+          id="neutral"
+          name="gender"
+          placeholder=""
+          type="radio"
+          value="mx"
+          />
+      
+          Mx.
+      </label>
+        
+      </div>
+      <div>
+        <label>
+        
+          <input
+            id="mister"
+            name="gender"
+            placeholder=""
+            type="radio"
+            value="mr"
+            />
+            Mr.
+        </label>
+          
+        </div>
+        <div>
+          <label>
+          
+            <input
+              id="miss"
+              name="gender"
+              placeholder=""
+              type="radio"
+              value="ms"
+              />
+          
+              Ms.
+          </label>
+            
+          </div>
+    
+          <div>
+            <label>
+            
+              <input
+                id="misses"
+                name="gender"
+                placeholder=""
+                type="radio"
+                value="mrs"
+                />
+            
+                Mrs.
+            </label>
+              
+            </div>
+      
+            <div>
+              <div>
+                <label for="name">
+                  Name
+                </label>
+              </div>
+              <input type="text" id="name" name="name" required>
+    
+              <div>
+              <label for="text">
+                Email
+              </label>
+            </div>
+            <input type="text" id="email" name="name" required>
+          </div>
+            
+    
+        </fieldset>
+        
+        <fieldset>
+    
+          <legend>Payment Information</legend>
+    
+          <select name="credit-card" id="credit-card" required> 
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="amex">American Express</option>
+            <option value="discover">Discover</option>
+          </select>
+          <label>Credit Card Number</label>
+          <div>
+            <input type="tel" placeholder="xxxx xxxx xxxx xxxx">
+          </div>
+        
+        </fieldset>
+    
+        
+    
+      </form>
+      
+    
+    </body>
+
+</html>
