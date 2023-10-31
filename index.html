@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Payment Form</h1>
+        <p>
+            required fields are marked by a *
+        </p>
+    </header>
+    <div>
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="prefix1">Mx.</label> <br>
+            <input type="radio" name ="prefix1" label="prefix1" checked><br>
+
+            <label for="prefix2">Mr.</label><br>
+            <input type="radio" name ="prefix2" label="prefix2"><br>
+
+            <label for="prefix3">Ms.</label><br>
+            <input type="radio" name ="prefix2" label = "prefix2"><br>
+
+            <label for="prefix4">Mrs.</label><br>
+            <input type="radio" name ="prefix3" label = prefix3><br>
+
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Payment Information</legend>
+
+            <select id="card-type" name="card type" required>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            <label for="ccnumber">Credit Card Number</label><br>
+            <input type="tel" id="ccnumber" name="ccnumber" placeholder="xxxx xxxx xxxx xxxx" required><br>
+            
+
+            <label for="expiration">Expiration Date</label><br>
+            <input type="text" id="expiration-date" name="expiration" required><br>
+
+        </fieldset>
+        <input type="submit" value="Submit Payment">
+    </div>
+
+
+</body>
+</html>
