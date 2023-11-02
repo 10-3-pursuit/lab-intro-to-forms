@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms-intro-lab</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+
+    <P>Contact information</P>
+    <hr>
+    <form>
+        <label>
+            <input type="Radio" name="prefix"checked/> 
+            Mx.
+        </label>
+        <br />
+        <label>
+            <input type="Radio" name="prefix"/>
+            Mr.
+        </label>
+        <br />
+        <label>
+            <input type="Radio" name="prefix"/>
+            Ms.
+        </label>
+        <br />
+        <label>
+            <input type="Radio" name="prefix"/>
+            Mrs.
+        </label>
+        <br/>
+        <!-- <div>Name</div> -->
+        <label>
+            name
+            <input id="name" name="first" type="text" required />
+            
+          </label>
+    
+        <br/>
+        <!-- <div>Email</div> -->
+        <label>
+            Email
+            <input type="email" id="email" placeholder="Enter Your Email..." required />
+            
+          </label>
+    
+    
+    <hr>
+    
+    <hr>
+    <div>Payment Information</div>
+         
+    
+        
+        <!-- having a value that is an empty string in the option tag plus using the required keyword in the select tag will require user to choose from the dropdown -->
+        
+        <select id="post-category" name="category" required>
+            
+          <option value="visa">Visa </option> 
+          <option value="mastercard">Master</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+          
+        </select>
+        <br/>
+        <div>Credit card Number</div>
+        <label>
+             <input type="tel" placeholder="XXXX XXXX XXXX XXXX" required/>
+            
+          </label>
+         
+          <label>
+            Expiration Date
+            <input type="text" id="experation date" required>
+
+        </label>
+        <hr>
+      <input type="submit" value = "submit payment"/> 
+    </form>
+    
+</body>
+</html>
